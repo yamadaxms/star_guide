@@ -1,73 +1,94 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>天体導入ガイド</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      font-family: sans-serif;
-      margin: 16px;
-      line-height: 1.6;
-      max-width: 700px;
-    }
-    h1, h2 {
-      margin-top: 1.5em;
-    }
-    ul {
-      padding-left: 1.2em;
-    }
-    a {
-      color: #1e88e5;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>天体導入ガイド</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #111;
+    color: #eee;
+    padding-bottom: 70px; /* タブバー分 */
+  }
+  header {
+    position: sticky;
+    top: 0;
+    background: #222;
+    padding: 14px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid #333;
+    z-index: 100;
+  }
+  .card {
+    background: #1d1d1d;
+    padding: 18px;
+    margin: 16px;
+    border-radius: 14px;
+    box-shadow: 0 4px 10px #0004;
+  }
+  h2 {
+    margin-top: 0;
+  }
+  ul { padding-left: 20px; }
+  a { color: #64b5f6; text-decoration: none; }
+
+  /* 下部タブバー */
+  .tabbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 56px;
+    background: #222;
+    border-top: 1px solid #333;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .tabbar a {
+    color: #aaa;
+    font-size: 14px;
+  }
+</style>
 </head>
+
 <body>
-  <h1>天体導入ガイド（工事中）</h1>
+<header>★ 天体導入ガイド</header>
 
-  <div>
-    移動天文台にて観望対象となる主な天体について、その導入方法と見え方をまとめています。<br>
-    使用する望遠鏡は【Vixen ED102SS】<br>
-    接眼レンズ（アイピース）は:
-    <ul>
-      <li>40mm TELEVUE PLoSSL（約16倍）</li>
-      <li>19mm TELEVUE PANOPTIC（約35倍）</li>
-      <li>12mm TELEVUE Radian（約55倍）</li>
-      <li>8mm TELEVUE Radian（約82倍）</li>
-      <li>6mm SkyWatcher UWA（約110倍）</li>
-    </ul>
+<div class="card">
+  <h2>観望ガイド概要</h2>
+  使用望遠鏡：Vixen ED102SS<br>
+  Stellarium による視野イメージを掲載。
+  <p><a href="moon.html">→ 月の観望イメージを見る</a></p>
+</div>
 
-    <p>視野イメージは <a href="moon.html">こちら（月の観望イメージ）</a></p>
-
-    <p>観望イメージは、シミュレーションソフト Stellarium を使用して作成しています。<br>
-    実際の観望イメージとは異なる点は注意願います。</p>
-  </div>
-
-  <hr>
-
-  <h2>報告書にある天体（月・惑星を除く）</h2>
+<div class="card">
+  <h2>報告書にある天体</h2>
   <ul>
     <li>ポラリス</li><li>ミザール アルコル</li><li>アークトゥルス</li>
     <li>スピカ</li><li>レグルス</li><li>デネボラ</li>
-    <li>コル・カロリ</li><li>アルギエバ</li><li>ベガ</li>
-    <li>ダブルダブルスター</li><li>アルタイル</li><li>デネブ</li>
-    <li>アルビレオ</li><li>アンタレス</li><li>ラス・アルゲティ</li>
-    <li>ラス・アルハゲ</li><li>フォーマルハウト</li><li>アルフェラッツ</li>
-    <li>メサルティム</li><li>ガーネットスター</li><li>アルマク</li>
-    <li>アンドロメダ銀河（M31）</li><li>カペラ</li>
+    <li>アルビレオ</li><li>アンタレス</li><li>カペラ</li>
+    ...
   </ul>
+</div>
 
+<div class="card">
   <h2>その他見応えのある天体</h2>
   <ul>
-    <li>いるか座γ</li><li>こと座ζ</li><li>アキルド</li>
     <li>M13</li><li>h-χ</li><li>コートハンガー</li>
-    <li>NGC457（ふくろう星団 / とんぼ星団 / E.T.星団）</li>
+    <li>NGC457（ふくろう星団）</li>
   </ul>
+</div>
 
-  <h2>比較的暗い場所で見応えのある天体</h2>
-  <ul>
-    <li>M2</li><li>M3</li><li>M15</li><li>M45</li><li>M57</li>
-  </ul>
+<div class="tabbar">
+  <a href="index.html">ホーム</a>
+  <a href="moon.html">月</a>
+  <a href="#">惑星</a>
+  <a href="#">設定</a>
+</div>
 
 </body>
 </html>

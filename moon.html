@@ -1,32 +1,93 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>月の観望イメージ</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      font-family: sans-serif;
-      margin: 16px;
-      line-height: 1.6;
-      max-width: 700px;
-    }
-    img {
-      width: 100%;
-      height: auto;
-      margin-bottom: 16px;
-      border-radius: 8px;
-    }
-  </style>
-</head>
-<body>
-  <h1>月の観望イメージ</h1>
+<meta charset="UTF-8">
+<title>月の観望イメージ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #111;
+    color: #eee;
+    padding-bottom: 70px;
+  }
+  header {
+    position: sticky;
+    top: 0;
+    background: #222;
+    padding: 14px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid #333;
+  }
 
-  <img src="img/moon/40mm.jpeg" alt="40mmの月">
-  <img src="img/moon/19mm.jpeg" alt="19mmの月">
-  <img src="img/moon/12mm.jpeg" alt="12mmの月">
-  <img src="img/moon/8mm.jpeg" alt="8mmの月">
-  <img src="img/moon/60mm.jpeg" alt="60mmの月">
+  .fov {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: #000;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .fov img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .label {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #ccc;
+  }
+
+  .tabbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 56px;
+    background: #222;
+    border-top: 1px solid #333;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .tabbar a {
+    color: #aaa;
+    font-size: 14px;
+  }
+</style>
+</head>
+
+<body>
+<header>🌕 月の観望イメージ</header>
+
+<div class="label">40mm（約16倍）</div>
+<div class="fov"><img src="img/moon/40mm.jpeg"></div>
+
+<div class="label">19mm（約35倍）</div>
+<div class="fov"><img src="img/moon/19mm.jpeg"></div>
+
+<div class="label">12mm（約55倍）</div>
+<div class="fov"><img src="img/moon/12mm.jpeg"></div>
+
+<div class="label">8mm（約82倍）</div>
+<div class="fov"><img src="img/moon/8mm.jpeg"></div>
+
+<div class="label">6mm（約110倍）</div>
+<div class="fov"><img src="img/moon/60mm.jpeg"></div>
+
+<div class="tabbar">
+  <a href="index.html">ホーム</a>
+  <a href="moon.html">月</a>
+  <a href="#">惑星</a>
+  <a href="#">設定</a>
+</div>
 
 </body>
 </html>
