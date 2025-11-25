@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>コートハンガー観望ガイド</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #111;
+    color: #eee;
+    padding-bottom: 70px;
+  }
+  header {
+    position: sticky;
+    top: 0;
+    background: #222;
+    padding: 14px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid #333;
+  }
+
+  .fov {
+    width: 100%;
+    background: #000;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+  }
+  .fov img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .label {
+    text-align: center;
+    margin-bottom: 0px;
+    font-size: 15px;
+    color: #ccc;
+  }
+
+  .label_s {
+    text-align: center;
+    margin-bottom: 0px;
+    font-size: 10px;
+    color: #ccc;
+  }
+
+  .tabbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 56px;
+    background: #222;
+    border-top: 1px solid #333;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .tabbar a {
+    color: #aaa;
+    font-size: 14px;
+  }
+</style>
+</head>
+
+<body>
+<header>コートハンガー観望ガイド</header>
+
+<h2>観望ガイド</h2>
+<div class="label">星座ガイド</div>
+<div class="label_s">アルタイルからベガの方へ、や座を超えたその先</div>
+<div class="fov"><img src="const.jpg"></div>
+<p>
+<div class="label">ファインダーガイド</div>
+<div class="label_s">四重の円は0.5度、2度、4度、7度の視野角になります</div>
+<div class="fov"><img src="finder.jpg"></div>
+
+<h2>観望イメージ<h2>
+<div class="label">40mm（約16倍、見かけ視野約2.3度）</div>
+<div class="fov"><img src="40mm.jpg"></div>
+<p>
+<div class="label">19mm（約35倍、見かけ視野約1.8度）</div>
+<div class="fov"><img src="19mm.jpg"></div>
+<p>
+<div class="label">12mm（約55倍、見かけ視野約1.1度）</div>
+<div class="fov"><img src="12mm.jpg"></div>
+<p>
+<div class="label">8mm（約82倍、見かけ視野約0.7度）</div>
+<div class="fov"><img src="8mm.jpg"></div>
+<p>
+<div class="label">6mm（約110倍、見かけ視野約0.5度）</div>
+<div class="fov"><img src="6mm.jpg"></div>
+
+<div class="tabbar">
+  <a href="../../index.html">ホーム</a>
+</div>
+
+</body>
+</html>
